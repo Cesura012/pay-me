@@ -26,7 +26,9 @@ Base de datos MySQL en Railway (proximamente)
 ## Integrantes
 
 Gracia Nava Ernesto  - Backend
+
 Obeso Sanchez Michelle Jesus - Frontend
+
 De La O Torres Alexandra Guadalupe Rubi - DB & API
 
 Configuración del Proyecto
