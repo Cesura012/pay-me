@@ -1,0 +1,103 @@
+body,
+html {
+    font-family: "Poppins", sans-serif;
+    background: #E8EBF2;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    width: 350px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar h1 {
+    margin: 30px 0 50px 30px;
+    font-size: 30px;
+}
+
+.btns-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.btns-menu button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+}
+
+.btns-menu button:hover {
+    background-color: #e9e9e9;
+}
+
+.btns-menu button.active {
+    background-color: #9900ff5b;
+    color: #560090;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.current-balance {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 350px;
+    position: relative;
+}
+
+.current-balance p {
+    font-size: 50px;
+    font-weight: bold;
+    color: #7700C6;
+}
+
+/*Boton del lado izquierdo de h2 saldo actual*/
+.add-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Posiciona el botón dentro del contenedor */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde el lado derecho */
+    background-color: #560090;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #7700C6;
+}
