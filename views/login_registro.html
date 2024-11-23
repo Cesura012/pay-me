@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/style_login_registro.css" />
+  <title>Pay-me</title>
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>Crea tu Cuenta</h1>
+        <input type="text" placeholder="Nombre" required />
+        <input type="text" placeholder="Apellido" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <input type="password" placeholder="Contraseña" required />
+        <button>Registrar</button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Iniciar Sesión</h1>
+        <input type="email" placeholder="Correo electrónico" required />
+        <input type="password" placeholder="Contraseña" required />
+        <div class="remember-me">
+          <label><input type="checkbox">Recuerdame</label>
+          <a href="#">Olvidaste tu contraseña?</a>
+        </div>
+        <button>Iniciar sesión</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Bienvenido</h1>
+          <p>Inicia sesión con tu cuenta</p>
+          <button class="ghost" id="signIn">Iniciar sesión</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hola!!!</h1>
+          <p>¿No tienes una cuenta?</p>
+          <button class="ghost" id="signUp">Registrate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../scripts/login_registro.js"></script>
+</body>
+
+</html>
