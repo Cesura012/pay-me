@@ -1,13 +1,13 @@
-body,
-html {
+html,
+body {
     font-family: "Poppins", sans-serif;
     background: #E8EBF2;
-    display: flex;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
-.dashboard {
+.movements {
     display: flex;
     height: 100%;
 }
@@ -25,7 +25,7 @@ html {
 }
 
 .sidebar h1 {
-    padding: 0;
+    padding: 0px;
     margin: 30px 0 50px 30px;
     font-size: 30px;
 }
@@ -62,97 +62,100 @@ html {
     font-weight: bold;
 }
 
-.container {
+.movements-container {
     margin-left: 250px;
     padding: 30px;
     width: calc(100% - 250px);
     transition: all 0.3s ease;
 }
 
-h4 {
-    margin-top: 10px;
-    color: #0000005d;
-}
-
-.card-container {
-    display: flex;
-    gap: 60px;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 20px;
+.movements-table {
+    background: #ffffff;
+    border-radius: 12px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
-    padding: 15px;
-    min-width: 350px;
-    max-width: 400px;
-    flex-grow: 1;
-    position: relative;
+    padding: 24px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 60px;
 }
 
-.card h2 {
-    margin: 0;
-}
-
-.card p {
-    font-size: 50px;
-    font-weight: bold;
-    color: #7700C6;
-}
-
-.add-button {
+.filters {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: #560090;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    cursor: pointer;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
-.add-button:hover {
-    background-color: #7700C6;
+.filter-item {
+    flex: 1;
+}
+
+.filter-item input,
+.filter-item select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.transactions {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+    text-align: left;
+    padding: 12px;
+}
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+}
+
+.empty-state img {
+    width: 150px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
     .sidebar {
         width: 70px;
+
     }
 
     .sidebar h1 {
         display: none;
+
     }
 
     .btns-menu button {
         justify-content: center;
+
         font-size: 0;
+
     }
 
     .btns-menu button span {
         display: none;
+
     }
 
-    .container {
+    .movements-container {
         margin-left: 70px;
+
         width: calc(100% - 70px);
-    }
 
-    .card-container {
-        gap: 30px;
-    }
-
-    .card {
-        min-width: 300px;
     }
 }
 
@@ -160,29 +163,34 @@ h4 {
     .sidebar {
         position: absolute;
         left: -100%;
-        transition: all 0.3s ease;
+
     }
 
     .sidebar.open {
         left: 0;
+
     }
 
-    .container {
+    .movements-container {
         margin-left: 0;
+
         width: 100%;
+
     }
 
-    .card-container {
+    .filters {
         flex-direction: column;
-        gap: 20px;
+
     }
 
-    .card {
-        min-width: 100%;
-        max-width: 100%;
+    .transactions-table {
+        font-size: 12px;
+
     }
 
-    .card p {
-        font-size: 30px;
+    .transactions-table th,
+    .transactions-table td {
+        padding: 8px;
+
     }
 }
