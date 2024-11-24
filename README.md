@@ -10,7 +10,7 @@ Pay-me es una aplicación web que simula un sistema de pagos tipo PayPal. Permit
 
 Diseño en Figma: https://www.figma.com/proto/7LFAiOOmdtOAoK8Aax42tK/Untitled?node-id=51-451&t=nKYV0hRdgE4QrSu1-1
 
-Documentación de la API: https://github.com/delaoalexx/Coffe?tab=readme-ov-file#api-payme-aka-coffe
+Documentación de la API: https://github.com/delaoalexx/Coffe/blob/master/README.md
 
 API URL: ¡¡PROXIMAMENTE!! (railway)
 
