@@ -13,15 +13,16 @@ html {
 }
 
 .sidebar {
-    width: 350px;
+    width: 400px;
     background-color: #ffffff;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 .sidebar h1 {
+    padding: 0;
     margin: 30px 0 50px 30px;
     font-size: 30px;
 }
@@ -59,35 +60,53 @@ html {
 }
 
 .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.current-balance {
+h4 {
+    margin-top: 10px;
+    color: #0000005d;
+}
+
+.card-container {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
     padding: 15px;
-    margin-bottom: 20px;
-    width: 350px;
+    min-width: 350px;
+    max-width: 400px;
+    flex-grow: 1; 
     position: relative;
 }
 
-.current-balance p {
+.card h2 {
+    margin: 0;
+}
+
+.card p {
     font-size: 50px;
     font-weight: bold;
     color: #7700C6;
 }
 
-/*Boton del lado izquierdo de h2 saldo actual*/
 .add-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute; /* Posiciona el botón dentro del contenedor */
-    top: 10px; /* Ajusta la distancia desde la parte superior */
-    right: 10px; /* Ajusta la distancia desde el lado derecho */
+    position: absolute;
+    top: 15px;
+    right: 15px;
     background-color: #560090;
     color: #fff;
     border: none;
@@ -100,4 +119,26 @@ html {
 
 .add-button:hover {
     background-color: #7700C6;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; 
+        gap: 20px; 
+        padding: 10px; 
+    }
+
+    .sidebar {
+        width: 200px; 
+        padding: 10px; 
+    }
+
+    .sidebar h1 {
+        font-size: 24px; 
+    }
+
+    .btns-menu button {
+        font-size: 16px; 
+        padding: 8px; 
+    }
 }
