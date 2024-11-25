@@ -12,9 +12,9 @@
 <body>
     <div class="movements">
         <aside class="sidebar">
-            <h1>Pay-me</h1>
+            <h1 onclick="navigateTo('dashboard.html')">Pay-me</h1>
             <div class="btns-menu">
-                <button>
+                <button onclick="navigateTo('dashboard.html')">
                     <i class="material-icons">home</i>
                     <span>Dashboard</span>
                 </button>
@@ -22,15 +22,15 @@
                     <i class="material-icons">bar_chart</i>
                     <span>Movimientos</span>
                 </button>
-                <button>
+                <button onclick="navigateTo('transferencias.html')">
                     <i class="material-icons">sync_alt</i>
                     <span>Transferencias</span>
                 </button>
-                <button>
+                <button onclick="navigateTo('agregar_tarjeta.html')">
                     <i class="material-icons">add_card</i>
                     <span>Agregar Tarjetas</span>
                 </button>
-                <button>
+                <button onclick="navigateTo('realizar_pagos.html')">
                     <i class="material-icons">attach_money</i>
                     <span>Realizar Pagos</span>
                 </button>
@@ -76,6 +76,11 @@
             </div>
         </div>
     </div>
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
 </body>
 
 </html>
