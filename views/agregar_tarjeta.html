@@ -11,32 +11,8 @@
 
 <body>
     <div class="add-card">
-        <aside class="sidebar">
-            <h1 onclick="navigateTo('dashboard.html')">Pay-me</h1>
-            <div class="btns-menu">
-                <button onclick="navigateTo('dashboard.html')">
-                    <i class="material-icons">home</i>
-                    <span>Dashboard</span>
-                </button>
-                <button onclick="navigateTo('movimientos.html')">
-                    <i class="material-icons">bar_chart</i>
-                    <span>Movimientos</span>
-                </button>
-                <button onclick="navigateTo('transferencias.html')">
-                    <i class="material-icons">sync_alt</i>
-                    <span>Transferencias</span>
-                </button>
-                <button class="active">
-                    <i class="material-icons">add_card</i>
-                    <span>Agregar Tarjetas</span>
-                </button>
-                <button onclick="navigateTo('realizar_pagos.html')">
-                    <i class="material-icons">attach_money</i>
-                    <span>Realizar Pagos</span>
-                </button>
-            </div>
-        </aside>
-        <div class="add-card-container">
+        <div class="sidebar-container"></div>
+        <div class="container">
             <h1>Agregar Tarjetas</h1>
             <div class="add-card-table">
                 <h2>Agregar Nueva Tarjeta</h2>
@@ -53,11 +29,7 @@
             </div>
         </div>
     </div>
-    <script>
-        function navigateTo(page) {
-            window.location.href = page;
-        }
-    </script>
+    <script src="../scripts/sidebar.js"></script>
 </body>
 
 </html>
