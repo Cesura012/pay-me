@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style_transferencias.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style_transferencias.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Pay-me</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="transfers">
-        <div class="sidebar-container"></div>
-        <div class="container">
-            <h1>Transferencias</h1>
-            <div class="transfers-table">
-                <h2>Realizar Transferencia</h2>
-                <form>
-                    <label for="recipientEmail">Correo del destinatario:</label>
-                    <input type="email" id="recipientEmail" placeholder="ejemplo@correo.com" required>
-                    <label for="amount">Monto a transferir:</label>
-                    <input type="number" id="amount" placeholder="$0.00" required>
-                    <label for="message">Mensaje (opcional):</label>
-                    <input type="text" id="message" placeholder="Agrega un mensaje">
-                    <button type="submit">Transferir</button>
-                    <button type="button">Cancelar</button>
-                </form>
-            </div>
+      <div class="sidebar-container"></div>
+      <div class="container">
+        <h1>Transferencias</h1>
+        <div class="transfers-table">
+          <h2>Realizar Transferencia</h2>
+          <form id="formMakeTransfer">
+            <label for="recipientEmail">Correo del destinatario:</label>
+            <input
+              type="email"
+              id="recipientEmail"
+              placeholder="ejemplo@correo.com"
+              required
+            />
+            <label for="amount">Monto a transferir:</label>
+            <input type="number" id="amount" placeholder="$0.00" required />
+            <label for="message">Mensaje (opcional):</label>
+            <input type="text" id="message" placeholder="Agrega un mensaje" />
+            <button type="submit">Transferir</button>
+            <button type="button">Cancelar</button>
+          </form>
         </div>
+      </div>
     </div>
     <script src="../scripts/sidebar.js"></script>
-</body>
-
+  </body>
 </html>
