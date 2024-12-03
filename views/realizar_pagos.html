@@ -17,13 +17,16 @@
             <div class="payments-table">
                 <h2>Realizar Pago</h2>
                 <form>
-                    <label for="paymentMethod">Método de Pago:</label>
+                    <label for="payService">Seleccionar servicio:</label>
                     <select>
-                        <option value="current balance">Saldo Actual</option>
-                        <option value="card">Tarjeta de Crédito/Débito</option>
+                        <option>Telmex</option>
+                        <option>CFE</option>
+                        <option>Megacable</option>
+                        <option>SKY</option>
+                        <option>OOMSAPAS</option>
                     </select>
                     <label for="paymentAmount">Monto a Pagar:</label>
-                    <input type="number" id="paymentAmount" placeholder="$0.00" required>
+                    <input type="number" placeholder="$0.00" required>
                     <label for="Description">Descripción del Pago:</label>
                     <input type="text" placeholder="Agrega una descripción" required>
                     <button type="submit">Pagar</button>
