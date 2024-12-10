@@ -7,7 +7,7 @@ signUpButton.addEventListener('click', () =>
   container.classList.add('right-panel-active')
 );
 
-// Evento para regresar al form de iniciar sesión
+// Eventthfhyfho para regresar al form de iniciar sesión
 signInButton.addEventListener('click', () =>
   container.classList.remove('right-panel-active')
 );
